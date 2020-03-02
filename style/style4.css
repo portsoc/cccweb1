@@ -1,0 +1,28 @@
+body {
+  background: black;
+  color: #ffd23e;
+  font-family: arial;
+}
+
+aside {
+    color: rgb(75,213,238);
+}
+
+article {
+  text-align: justify;
+  margin: auto;
+  width: 15em;
+}
+
+header {
+  text-align: center;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+strong {
+  text-transform: uppercase;
+  font-weight: normal;
+}

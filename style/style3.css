@@ -1,0 +1,15 @@
+body {
+  background: black;
+  color: #ffd23e;
+  font-family: arial;
+}
+
+aside {
+    color: rgb(75,213,238);
+}
+
+article {
+  text-align: justify;
+  margin: auto;
+  width: 15em;
+}
