@@ -83,6 +83,7 @@ A plain-text document comprising a couple of headings and three paragraphs.
   * In the original text "Death Star" was in all-caps.
   * In the original text "Death Star" was in all-caps but not bold.
   * We created two new rules to achieve this.
+  * We also add a background of stars.
 
 ## Stage 11: Simplify
 
@@ -109,8 +110,12 @@ A plain-text document comprising a couple of headings and three paragraphs.
 
 ## Stage 15: Add "A long time ago..."
 
-* To complete the movie intro we need to add the famous line "A long time ago in a galaxy far, far away....", and the logo.
+* The movie intro also includes the famous line "A long time ago in a galaxy far, far away....".
 
+## Stage 16: The Star Wars Logo
+
+* To complete the intro we add:
+  * the logo.
 
 
 
