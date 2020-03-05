@@ -1,0 +1,24 @@
+body {
+  background: black;
+  color: #ffd23e;
+  font-family: arial;
+}
+
+article {
+  width: 15em;
+  text-align: justify;
+  margin: auto;
+}
+
+header {
+  text-align: center;
+}
+
+strong {
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+h1 {
+  text-transform: uppercase;
+}

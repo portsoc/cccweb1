@@ -5,6 +5,7 @@
 A plain-text document comprising a couple of headings and three paragraphs.
 
 ## Stage 1: Structuring the Page
+
 * It is good practice to specify which version of HTML is used at the start of each document.
   * We will use HTML5 (the latest version).
   * We do this with a special `<!doctype html5>` tag.
@@ -19,7 +20,7 @@ A plain-text document comprising a couple of headings and three paragraphs.
 * Elements in the `<body>` are the content that should be displayed on the page.
   * The body contains all of the original plain text.
 
-## Stage 2: Marking-Up A Heading 
+## Stage 2: Marking-Up A Heading
 
 * We markup the heading using the `<h1>` tag.
   * The first tag marks the start of an element (e.g. `<h1>` is the start of our heading).
@@ -43,30 +44,48 @@ A plain-text document comprising a couple of headings and three paragraphs.
 * All HTML5 documents must include a title in order to be considered valid.
   * Browsers will always _try_ to render HTML files, even if they're invalid.
 
-## Stage 6: Adding Style
+## Stage 6: Adding a Basic Style
 
 * It is good practice to separate form from content (style from substance).
 * So far we have developed the content (the substance).  Now we will give it a form by adding a stylesheet.
 * We create a file called `style.css`, and to that:
   * Adds a single rule that sets the background of the body to black and the text color to white.
 
-## Stage 7:
+## Stage 7: Font and Colour Improvements
 
 * Now we improve our stylesheet.  Our aim being to make the text feel more in keeping with the movie.
-* We change the font from the default (which si whatever the browser is set to use) to a specific named typeface, in this case we just choose a font wihout serifs.
+* We change the font from the default (which is whatever the browser is set to use) to a specific named typeface, in this case we just choose a font wihout serifs.
 * The text colour is chanegd from white to a Star Wars yellow.
   * There are several ways of describing colour in HTML, often these require a little understanding of how mixing different levels of red, green and blue light can produce different hues.
-  * The colour we use is `#ffd23e`.  
+  * The colour we use is `#ffd23e`.
 * No change is made to the HTML in this stage.
 
-## Stage 8:
-etc
+## Stage 8: Centering Page Text
 
+* HTML contains elements that help us describe the content.
+* Elements don't just compartmentalise the page, they add meaning.
+* We add an `<article>` tag around the content to describe it as such.
+* Adding a new rule to the stylesheet fixes the width of the content to `15em` wide (an `em` is always the same as the size of the current font element).
+* The text-align property spread the text on each line so that it uses the full width of the article element.
+* Finally, we adjust the margins of the article.  Setting this value to `auto` allows the browser to add equal margin space either side of the element, so it becomes centred.
 
-## Stage n: Simplify
-* Some elements don't _need_ a closing tag: `<p>` is one such element, so we can simplify the document a little.
+## Stage 9: Centered Heading(s)
 
+* We want both this "Episode IV" and "A New Hope" to be centred.  We can achieve this by:
+  * Grouping the elements in a parent element: we use `<header>` here because it's more meaningful than `div`.
+  * Adding a style rule that centers all the content of that element.
 
+## Stage 10: Tweaks
+
+* To get the text as close as possible to the original a couple of small changes are needed.  Browsers include a _default stylesheet_ which specifies things how large a heading should be, and how much space to go around it.  There are two things we need to override in this sheet.
+  * In the original text "Death Star" was in all-caps.
+  * In the original text "Death Star" was in all-caps but not bold.
+  * We create two new rules to achieve this.
+
+## Stage 11: Simplify
+* One of the design aims of HTML5 was to make writing content simpler, so ome elements don't _need_ a closing tag: `<p>` is one such element, so we can simplify the document a little by removing these.
+* We don't _need_ html body and head tags either.  The browser will assuse (once it sees a `<!doctype html>`) that each element should go in the `<head>` until it sees something that should be displayed, for example, an  `<article>` tag.
+* The resulting document is a lot simpler.
 
 
 
@@ -189,7 +208,7 @@ body {
 ```
 
 * Anchor the base of the article to the bottom of the viewport.
-* This baseline is then the origin of rotation when the article is tilted back (rotated around the x-axiz by 45 degrees).  
+* This baseline is then the origin of rotation when the article is tilted back (rotated around the x-axiz by 45 degrees).
 
 ```
 article {
