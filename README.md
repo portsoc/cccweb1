@@ -107,7 +107,9 @@ A plain-text document comprising a couple of headings and three paragraphs.
 
 * Stylesheets can include animation, so we can move the text.
 
+## Stage 15: Add "A long time ago..."
 
+* To complete the movie intro we need to add the famous line "A long time ago in a galaxy far, far away....", and the logo.
 
 
 
