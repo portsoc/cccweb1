@@ -1,5 +1,7 @@
 body {
   background: black;
+  background: url(stars.png);
+  background-size: 100vw;
   color: #ffd23e;
   font-family: arial;
   font-size: 6.666vw;
