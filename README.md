@@ -99,9 +99,13 @@ A plain-text document comprising a couple of headings and three paragraphs.
 * Earlier we set our text to be `15em` wide, so since we want those 15 characters to fill the width of the screen we calculate 100/15 (which is 6.66 recurring), and set that as the font size, thus `font-size: 6.66vw`;
 * By default the body has a small `body` margin which must now be removed in order for the new wider text to fit.
 
-## Stage 13: Laying the Text Down
+## Stage 13: Tilting the Text
 
 * We can lay the text down as it appears in the movie.
+
+## Stage 14: Animate the Crawl
+
+* Stylesheets can include animation, so we can move the text.
 
 
 
