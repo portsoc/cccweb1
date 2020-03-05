@@ -83,26 +83,27 @@ A plain-text document comprising a couple of headings and three paragraphs.
   * In the original text "Death Star" was in all-caps.
   * In the original text "Death Star" was in all-caps but not bold.
   * We created two new rules to achieve this.
-  * We also add a background of stars.
+  * We also added a background of stars.
 
 ## Stage 11: Simplify
 
-* One of the design aims of HTML5 was to make writing content simpler, so some elements don't _need_ a closing tag: `<p>` is one such element, so we can simplify the document a little by removing these.
+* One of the design aims of HTML5 was to make writing content simpler, so some elements don't _need_ a closing tag: `<p>` is one such element, so we simplified the document a little by removing these.
 * We don't _need_ html body and head tags either.  The browser will assume (once it sees a `<!doctype html>`) that each element should go in the `<head>` until it sees something that should be displayed, for example, an  `<article>` tag.
 * The resulting document is a lot simpler.
 
 ## Stage 12: A Screen Full of Text
 
-* Next we wish to make the text take up the full width of the browser.
+* Next made the text take up the full width of the browser.
 * The part of the browser that shows the page is called the _viewport_.
 * The width and height of the viewport are available as a unit of measurement when styling the page.
-  * `vw` and `vh` are 1/100th of the width and height of the viewport respectively.
+  * `vw` and `vh` are 1% of the width and height of the viewport respectively.
 * Earlier we set our text to be `15em` wide, so since we want those 15 characters to fill the width of the screen we calculate 100/15 (which is 6.66 recurring), and set that as the font size, thus `font-size: 6.66vw`;
 * By default the body has a small `body` margin which must now be removed in order for the new wider text to fit.
 
 ## Stage 13: Tilting the Text
 
-* We can lay the text down as it appears in the movie.
+* We tilt the text down to give the perspective of the text leaning away from you as it appears in the movie.
+* The text is now anchored to bottom of the viewport for later animation
 
 ## Stage 14: Animate the Crawl
 
