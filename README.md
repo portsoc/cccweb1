@@ -83,12 +83,19 @@ A plain-text document comprising a couple of headings and three paragraphs.
   * We create two new rules to achieve this.
 
 ## Stage 11: Simplify
+
 * One of the design aims of HTML5 was to make writing content simpler, so ome elements don't _need_ a closing tag: `<p>` is one such element, so we can simplify the document a little by removing these.
 * We don't _need_ html body and head tags either.  The browser will assuse (once it sees a `<!doctype html>`) that each element should go in the `<head>` until it sees something that should be displayed, for example, an  `<article>` tag.
 * The resulting document is a lot simpler.
 
+## Stage 12: A Screen Full of Text
 
-
+* Next we wish to make the text take up the full width of the browser.
+* The part of the browser that shows the page is called the _viewport_.
+* The width and height of the viewport are available as a unit of measurement when styling the page.
+  * `vw` and `vh` are 1/100th of the width and height of the viewport respectively.
+* Earlier we set our text to be `15em` wide, so since we want those 15 characters to fill the width of the screen we calculate 100/15 (which is 6.66 recurring), and set that as the font size, thus `font-size: 6.66vw`;
+* By default the body has a small `body` margin which must now be removed in order for the new wider text to fit.
 
 
 
