@@ -117,6 +117,14 @@ A plain-text document comprising a couple of headings and three paragraphs.
 * To complete the intro we add:
   * the logo.
 
+## Stage 17: Theme
+
+* We add the theme so that it begins to play as the logo animation begins.
+
+
+
+
+
 
 
 
