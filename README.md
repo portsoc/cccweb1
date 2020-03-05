@@ -1,19 +1,19 @@
 # Star Wars
 
-## Stage 0: Plain Text as An HTML File
+## Stage 0: Plain Text as an HTML File
 
 A plain-text document comprising a couple of headings and three paragraphs.
 
-## Stage 1: Structuring the Page
+## Stage 1: Structuring the Page using HTML
 
 * It is good practice to specify which version of HTML is used at the start of each document.
-  * We will use HTML5 (the latest version).
-  * We do this with a special `<!doctype html5>` tag.
-* The tags we are adding at this stage are structural: they define the hierarchy of our HTML document.
-* In HTML documents are just text with added 'tags'.
+  * We use HTML5 (the latest version).
+  * This is indicated by a special `<!doctype html5>` tag at the beginning of the file.
+* The tags we added at this stage are structural: they define the hierarchy of the HTML document.
+* HTML documents are just plain text with added 'tags'.
   * A tag is made using "angle brackets" `<` and `>`
-  * Inside these brackets is the name of the tag.
-  * In HTML when we use tags we often use them in pairs
+  * Inside these brackets is the name of the tag, e.g. `<body>`.
+  * In HTML when we use tags we often use them in pairs.
 * The top level element is `<html>`: this contains two elements; a `<head>` and a `<body>`.
 * Elements in the `<head>` are informational: they tell the browser useful things about the document.
   * The head is initially empty.
@@ -22,70 +22,72 @@ A plain-text document comprising a couple of headings and three paragraphs.
 
 ## Stage 2: Marking-Up A Heading
 
-* We markup the heading using the `<h1>` tag.
+* We have marked-up the heading using the `<h1>` tag.
   * The first tag marks the start of an element (e.g. `<h1>` is the start of our heading).
-  * The second tag marks the end of the element.  To distinguish it from a nested start tag, we add a slash before the element name (e.g. `<h1>` ends out heading).
+  * The second tag marks the end of the element.  To distinguish it from a nested start tag, we add a slash before the element name (e.g. `</h1>` ends the heading).
 * There are six different tags for headings, reflecting different levels: `<h1>` through to `<h6>`.
 
 ## Stage 3: Marking-Up Paragraphs
 
-* We markup each of the three paragraphs using the `<p>` tag.
-* This creates three paragraph 'elements'.
+* We have marked-up each of the three paragraphs using the `<p>` tag.
+* This creates three paragraph _elements_.
 
 ## Stage 4: Adding Emphasis
 
-* The purpose of the opening crawl text is to establish to the viewer that the Galactic Empire is evil, so emphasising the word "evil" helps achieve this.
+* The purpose of the opening crawl text is to establish to the viewer that the Galactic Empire is evil, so emphasising the word _evil_ helps achieve this.
 * We therefore add `<em>` tags around the word "evil".
 * Furthermore we add `<strong>` emphasis around the name "Death Star".
 
 ## Stage 5: A title
 
-* If the document appears in a window or a tab, it will help if we give it a title, we do this using the `<title>` element.
+* If the document appears in a window or a tab, it will help if we give it a title, we have done this using the `<title>` element.
 * All HTML5 documents must include a title in order to be considered valid.
   * Browsers will always _try_ to render HTML files, even if they're invalid.
 
 ## Stage 6: Adding a Basic Style
 
 * It is good practice to separate form from content (style from substance).
-* So far we have developed the content (the substance).  Now we will give it a form by adding a stylesheet.
-* We create a file called `style.css`, and to that:
-  * Adds a single rule that sets the background of the body to black and the text color to white.
+* So far we have developed the content (the substance).  Now we give it a form by adding a _stylesheet_.
+* We have created a file called `style.css`, and to that:
+  * Added a single rule that sets the background of the body to black and the text color to white.
+  * Note that the syntax of CSS is different to HTML
 
 ## Stage 7: Font and Colour Improvements
 
-* Now we improve our stylesheet.  Our aim being to make the text feel more in keeping with the movie.
-* We change the font from the default (which is whatever the browser is set to use) to a specific named typeface, in this case we just choose a font wihout serifs.
-* The text colour is chanegd from white to a Star Wars yellow.
+* Now we have improved our stylesheet to make the text feel more in keeping with the movie.
+* We changed the font from the default (which is whatever the browser is set to use) to a specific named typeface, in this case we just choose a font without serifs.
+* The text colour is changed from white to a Star Wars yellow.
   * There are several ways of describing colour in HTML, often these require a little understanding of how mixing different levels of red, green and blue light can produce different hues.
   * The colour we use is `#ffd23e`.
 * No change is made to the HTML in this stage.
 
-## Stage 8: Centering Page Text
+## Stage 8: Centring Page Text
 
 * HTML contains elements that help us describe the content.
 * Elements don't just compartmentalise the page, they add meaning.
-* We add an `<article>` tag around the content to describe it as such.
-* Adding a new rule to the stylesheet fixes the width of the content to `15em` wide (an `em` is always the same as the size of the current font element).
-* The text-align property spread the text on each line so that it uses the full width of the article element.
-* Finally, we adjust the margins of the article.  Setting this value to `auto` allows the browser to add equal margin space either side of the element, so it becomes centred.
+* We added an `<article>` tag around the content to describe it as such.
+* Added a new rule to the stylesheet fixes the width of the content to `15em` wide (as a rule of thumb, 1 `em` is around the same width as a capital M in the current font).
+* The `text-align` property spreads the text on each line so that it uses the full width of the `<article>` element.
+* Finally, we adjusted the margins of the `<article>`.  Setting this value to `auto` allows the browser to add equal margin space either side of the element, so it becomes centred.
 
-## Stage 9: Centered Heading(s)
+## Stage 9: Centred Heading(s)
 
-* We want both this "Episode IV" and "A New Hope" to be centred.  We can achieve this by:
-  * Grouping the elements in a parent element: we use `<header>` here because it's more meaningful than `div`.
-  * Adding a style rule that centers all the content of that element.
+* "Episode IV" and "A New Hope" are now centred.  We achieved this by:
+  * Grouping the elements in a parent element: we use `<header>` here as it's a more appropriate and descriptive tag than `<div>`.
+  * Adding a style rule that centres all the content of that element.
+  * note that CSS uses the US spelling of centre: `center`
 
 ## Stage 10: Tweaks
 
-* To get the text as close as possible to the original a couple of small changes are needed.  Browsers include a _default stylesheet_ which specifies things how large a heading should be, and how much space to go around it.  There are two things we need to override in this sheet.
+* To get the text as close as possible to the original a couple of small changes were needed.  Browsers include a _default stylesheet_ which specifies things how large a heading should be, and how much space to go around it.  There are two things we need to override in this sheet.
   * In the original text "Death Star" was in all-caps.
   * In the original text "Death Star" was in all-caps but not bold.
-  * We create two new rules to achieve this.
+  * We created two new rules to achieve this.
 
 ## Stage 11: Simplify
 
-* One of the design aims of HTML5 was to make writing content simpler, so ome elements don't _need_ a closing tag: `<p>` is one such element, so we can simplify the document a little by removing these.
-* We don't _need_ html body and head tags either.  The browser will assuse (once it sees a `<!doctype html>`) that each element should go in the `<head>` until it sees something that should be displayed, for example, an  `<article>` tag.
+* One of the design aims of HTML5 was to make writing content simpler, so some elements don't _need_ a closing tag: `<p>` is one such element, so we can simplify the document a little by removing these.
+* We don't _need_ html body and head tags either.  The browser will assume (once it sees a `<!doctype html>`) that each element should go in the `<head>` until it sees something that should be displayed, for example, an  `<article>` tag.
 * The resulting document is a lot simpler.
 
 ## Stage 12: A Screen Full of Text
