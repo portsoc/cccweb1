@@ -16,8 +16,7 @@ body {
 
 body.playing {
   background: url(stars.png);
-  animation: fade 40s normal linear 78s;
-  animation-iteration-count: 1
+  animation: fade 4s 87s 1 normal linear forwards;
 }
 
 article {
@@ -30,7 +29,7 @@ article {
 }
 
 body.playing article {
-  animation: crawler 78s linear ;
+  animation: crawler 78s linear;
   animation-fill-mode: forwards;
   animation-delay: 11s;
 }
@@ -85,7 +84,6 @@ body.playing aside {
 
 @keyframes fade {
   0% { opacity: 1; }
-  10% { opacity: 0; }
   100% { opacity: 0; }
 }
 
@@ -135,23 +133,23 @@ body.playing:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: inline-block;
-	padding: 1.5em 2em;
-	background: red;
-	color: #fff;
-	border-radius: 50% / 10%;
+  padding: 1.5em 2em;
+  background: red;
+  color: white;
+  border-radius: 50% / 10%;
 }
 
 #play::before {
-  font-size: 200%;
   content: "▶︎";
+  font-family: Arial;
+  font-size: 200%;
+  line-height: 1.8em;
   text-align: center;
-	line-height: 1.65em;
-	position: absolute;
-	top: 10%;
-	bottom: 10%;
-	right: -5%;
-	left: -5%;
-	background: inherit;
-	border-radius: 5% / 50%;
+  position: absolute;
+  top: 10%;
+  bottom: 10%;
+  right: -5%;
+  left: -5%;
+  background: inherit;
+  border-radius: 5% / 50%;
 }
