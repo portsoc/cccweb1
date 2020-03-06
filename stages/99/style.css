@@ -1,3 +1,7 @@
+html {
+  background: black;
+}
+
 body {
   background: black;
   background-size: 100vw;
@@ -12,6 +16,8 @@ body {
 
 body.playing {
   background: url(stars.png);
+  animation: fade 40s normal linear 78s;
+  animation-iteration-count: 1
 }
 
 article {
@@ -74,6 +80,12 @@ body.playing aside {
   0% { opacity: 0; }
   5% { opacity: 1; }
   95% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@keyframes fade {
+  0% { opacity: 1; }
+  10% { opacity: 0; }
   100% { opacity: 0; }
 }
 
