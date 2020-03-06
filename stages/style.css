@@ -3,3 +3,9 @@ body {
   color: #ffd23e;
   font-family: arial;
 }
+
+article {
+  width: 15em;
+  text-align: justify;
+  margin: auto;
+}
