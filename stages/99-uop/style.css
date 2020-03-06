@@ -108,15 +108,35 @@ body.playing img {
   }
 }
 
+body.playing #play {
+  display: none;
+}
+
+
+
 #play {
-  font-size: 10vmin;
+  font-size: 3vmin;
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-25%, -25%);
-  color: #fffe;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+	padding: 1.5em 2em;
+	background: red;
+	color: #fff;
+	border-radius: 50% / 10%;
 }
 
-body.playing #play {
-  display: none;
+#play::before {
+  font-size: 200%;
+  content: "▶︎";
+  text-align: center;
+	line-height: 1.65em;
+	position: absolute;
+	top: 10%;
+	bottom: 10%;
+	right: -5%;
+	left: -5%;
+	background: inherit;
+	border-radius: 5% / 50%;
 }
