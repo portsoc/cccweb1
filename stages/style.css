@@ -17,7 +17,7 @@ article {
   bottom: 0;
   transform-origin: center bottom;
   transform: rotate3d(1, 0, 0, 45deg) translateY(100%);
-  animation: crawler 7s linear infinite;
+  animation: crawler 7s linear infinite 6s;
   animation-fill-mode: forwards;
 }
 
@@ -47,4 +47,21 @@ h1 {
     transform: rotateX(45deg) translateY(-50%);
     opacity: 0;
   }
+}
+
+aside {
+  position: absolute;
+  opacity: 0;
+  color: rgb(75,213,238);
+  animation-delay: 2s;
+  animation: alongtimeago 6s linear;
+  font-size: 4vw;
+  margin: 40vh 20vw;
+}
+
+@keyframes alongtimeago {
+  0% { opacity: 0; }
+  5% { opacity: 1; }
+  95% { opacity: 1; }
+  100% { opacity: 0; }
 }
