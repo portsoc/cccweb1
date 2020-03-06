@@ -4,7 +4,7 @@
 
 A plain-text document comprising a couple of headings and three paragraphs.
 
-## Stage 1: Structuring the Page using HTML
+## Stage 1: Structuring the Page using HTML ([see the diff](https://github.com/portsoc/cccweb1/commit/stage-1))
 
 * It is good practice to specify which version of HTML is used at the start of each document.
   * We use HTML5 (the latest version).
@@ -20,31 +20,31 @@ A plain-text document comprising a couple of headings and three paragraphs.
 * Elements in the `<body>` are the content that should be displayed on the page.
   * The body contains all of the original plain text.
 
-## Stage 2: Marking-Up A Heading
+## Stage 2: Marking-Up A Heading ([see the diff](https://github.com/portsoc/cccweb1/commit/stage-2))
 
 * We have marked-up the heading using the `<h1>` tag.
   * The first tag marks the start of an element (e.g. `<h1>` is the start of our heading).
   * The second tag marks the end of the element.  To distinguish it from a nested start tag, we add a slash before the element name (e.g. `</h1>` ends the heading).
 * There are six different tags for headings, reflecting different levels: `<h1>` through to `<h6>`.
 
-## Stage 3: Marking-Up Paragraphs
+## Stage 3: Marking-Up Paragraphs ([see the diff](https://github.com/portsoc/cccweb1/commit/stage-3))
 
 * We have marked-up each of the three paragraphs using the `<p>` tag.
 * This creates three paragraph _elements_.
 
-## Stage 4: Adding Emphasis
+## Stage 4: Adding Emphasis ([see the diff](https://github.com/portsoc/cccweb1/commit/stage-4))
 
 * The purpose of the opening crawl text is to establish to the viewer that the Galactic Empire is evil, so emphasising the word _evil_ helps achieve this.
 * We therefore add `<em>` tags around the word "evil".
 * Furthermore we add `<strong>` emphasis around the name "Death Star".
 
-## Stage 5: A title
+## Stage 5: A title ([see the diff](https://github.com/portsoc/cccweb1/commit/stage-5))
 
 * If the document appears in a window or a tab, it will help if we give it a title, we have done this using the `<title>` element.
 * All HTML5 documents must include a title in order to be considered valid.
   * Browsers will always _try_ to render HTML files, even if they're invalid.
 
-## Stage 6: Adding a Basic Style
+## Stage 6: Adding a Basic Style ([see the diff](https://github.com/portsoc/cccweb1/commit/stage-6))
 
 * It is good practice to separate form from content (style from substance).
 * So far we have developed the content (the substance).  Now we give it a form by adding a _stylesheet_.
@@ -52,7 +52,7 @@ A plain-text document comprising a couple of headings and three paragraphs.
   * Added a single rule that sets the background of the body to black and the text color to white.
   * Note that the syntax of CSS is different to HTML
 
-## Stage 7: Font and Colour Improvements
+## Stage 7: Font and Colour Improvements ([see the diff](https://github.com/portsoc/cccweb1/commit/stage-7))
 
 * Now we have improved our stylesheet to make the text feel more in keeping with the movie.
 * We changed the font from the default (which is whatever the browser is set to use) to a specific named typeface, in this case we just choose a font without serifs.
@@ -61,7 +61,7 @@ A plain-text document comprising a couple of headings and three paragraphs.
   * The colour we use is `#ffd23e`.
 * No change is made to the HTML in this stage.
 
-## Stage 8: Centring Page Text
+## Stage 8: Centring Page Text ([see the diff](https://github.com/portsoc/cccweb1/commit/stage-8))
 
 * HTML contains elements that help us describe the content.
 * Elements don't just compartmentalise the page, they add meaning.
@@ -70,14 +70,14 @@ A plain-text document comprising a couple of headings and three paragraphs.
 * The `text-align` property spreads the text on each line so that it uses the full width of the `<article>` element.
 * Finally, we adjusted the margins of the `<article>`.  Setting this value to `auto` allows the browser to add equal margin space either side of the element, so it becomes centred.
 
-## Stage 9: Centred Heading(s)
+## Stage 9: Centred Heading(s) ([see the diff](https://github.com/portsoc/cccweb1/commit/stage-9))
 
 * "Episode IV" and "A New Hope" are now centred.  We achieved this by:
   * Grouping the elements in a parent element: we use `<header>` here as it's a more appropriate and descriptive tag than `<div>`.
   * Adding a style rule that centres all the content of that element.
   * note that CSS uses the US spelling of centre: `center`
 
-## Stage 10: Tweaks
+## Stage 10: Tweaks ([see the diff](https://github.com/portsoc/cccweb1/commit/stage-10))
 
 * To get the text as close as possible to the original a couple of small changes were needed.  Browsers include a _default stylesheet_ which specifies things how large a heading should be, and how much space to go around it.  There are two things we need to override in this sheet.
   * In the original text "Death Star" was in all-caps.
@@ -85,13 +85,13 @@ A plain-text document comprising a couple of headings and three paragraphs.
   * We created two new rules to achieve this.
   * We also added a background of stars.
 
-## Stage 11: Simplify
+## Stage 11: Simplify ([see the diff](https://github.com/portsoc/cccweb1/commit/stage-11))
 
 * One of the design aims of HTML5 was to make writing content simpler, so some elements don't _need_ a closing tag: `<p>` is one such element, so we simplified the document a little by removing these.
 * We don't _need_ html body and head tags either.  The browser will assume (once it sees a `<!doctype html>`) that each element should go in the `<head>` until it sees something that should be displayed, for example, an  `<article>` tag.
 * The resulting document is a lot simpler.
 
-## Stage 12: A Screen Full of Text
+## Stage 12: A Screen Full of Text ([see the diff](https://github.com/portsoc/cccweb1/commit/stage-12))
 
 * Next made the text take up the full width of the browser.
 * The part of the browser that shows the page is called the _viewport_.
@@ -100,25 +100,25 @@ A plain-text document comprising a couple of headings and three paragraphs.
 * Earlier we set our text to be `15em` wide, so since we want those 15 characters to fill the width of the screen we calculate 100/15 (which is 6.66 recurring), and set that as the font size, thus `font-size: 6.66vw`;
 * By default the body has a small `body` margin which must now be removed in order for the new wider text to fit.
 
-## Stage 13: Tilting the Text
+## Stage 13: Tilting the Text ([see the diff](https://github.com/portsoc/cccweb1/commit/stage-13))
 
 * We tilt the text down to give the perspective of the text leaning away from you as it appears in the movie.
 * The text is now anchored to bottom of the viewport for later animation
 
-## Stage 14: Animate the Crawl
+## Stage 14: Animate the Crawl ([see the diff](https://github.com/portsoc/cccweb1/commit/stage-14))
 
 * Stylesheets can include animation, so we can move the text.
 
-## Stage 15: Add "A long time ago..."
+## Stage 15: Add "A long time ago..." ([see the diff](https://github.com/portsoc/cccweb1/commit/stage-15))
 
 * The movie intro also includes the famous line "A long time ago in a galaxy far, far away....".
 
-## Stage 16: The Star Wars Logo
+## Stage 16: The Star Wars Logo ([see the diff](https://github.com/portsoc/cccweb1/commit/stage-16))
 
 * To complete the intro we add:
   * the logo.
 
-## Stage 17: Theme
+## Stage 17: Theme ([see the diff](https://github.com/portsoc/cccweb1/commit/stage-17))
 
 * We add the theme so that it begins to play as the logo animation begins.
 
