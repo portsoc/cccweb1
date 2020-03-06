@@ -112,6 +112,9 @@ body.playing #play {
   display: none;
 }
 
+body.playing:hover {
+  cursor: none;
+}
 
 
 #play {
