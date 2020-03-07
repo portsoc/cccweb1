@@ -118,7 +118,7 @@ body.playing #play {
   display: none;
 }
 
-body.playing:hover {
+body.playing {
   cursor: none;
 }
 
