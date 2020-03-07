@@ -17,8 +17,7 @@ article {
   bottom: 0;
   transform-origin: center bottom;
   transform: rotate3d(1, 0, 0, 45deg) translateY(100%);
-  animation: crawler 7s linear infinite 6s;
-  animation-fill-mode: forwards;
+  animation: crawler 7s linear infinite forwards 6s;
 }
 
 header {
@@ -53,10 +52,9 @@ aside {
   position: absolute;
   opacity: 0;
   color: rgb(75,213,238);
-  animation-delay: 2s;
-  animation: alongtimeago 6s linear;
   font-size: 4vw;
   margin: 40vh 20vw;
+  animation: alongtimeago 6s linear 2s;
 }
 
 @keyframes alongtimeago {

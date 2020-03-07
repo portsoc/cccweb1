@@ -29,9 +29,7 @@ article {
 }
 
 body.playing article {
-  animation: crawler 78s linear;
-  animation-fill-mode: forwards;
-  animation-delay: 11s;
+  animation: crawler 78s linear forwards 11s;
 }
 
 header {
@@ -71,8 +69,7 @@ aside {
 }
 
 body.playing aside {
-  animation-delay: 2s;
-  animation: alongtimeago 6s linear;
+  animation: alongtimeago 6s linear 2s;
 }
 
 @keyframes alongtimeago {
@@ -96,8 +93,7 @@ img {
 }
 
 body.playing img {
-  animation: logo 9s linear;
-  animation-delay: 6s;
+  animation: logo 9s linear 6s;
 }
 
 @keyframes logo {
