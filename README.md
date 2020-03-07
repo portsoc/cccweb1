@@ -121,7 +121,6 @@ A plain-text document comprising a couple of headings and three paragraphs.
 
 * We add the theme so that it begins to play as the logo animation begins.
 
-## Stage 99: Extras
+## Stage 99: Extras ([see the diff](https://github.com/portsoc/cccweb1/commit/stage-99))
 
 * When presenting the finished 'movie' we added all sorts of extra bits like a play button and a fade out.  You're welcome to look at how we did this.
-
