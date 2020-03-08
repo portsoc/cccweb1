@@ -52,5 +52,6 @@ echo
 echo "done, branch ${branch} created"
 echo "you probably want to do the following:"
 echo
+echo "rm -rf '${branchprep}'"
 echo "git push -f --set-upstream origin ${branch} --tags"
 echo "git checkout master"
