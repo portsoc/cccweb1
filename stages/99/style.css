@@ -69,7 +69,7 @@ aside {
 }
 
 body.playing aside {
-  animation: alongtimeago 6s linear 2s;
+  animation: alongtimeago 6s linear;
 }
 
 @keyframes alongtimeago {

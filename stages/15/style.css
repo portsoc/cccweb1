@@ -17,7 +17,7 @@ article {
   bottom: 0;
   transform-origin: center bottom;
   transform: rotate3d(1, 0, 0, 45deg) translateY(100%);
-  animation: crawler 7s linear infinite forwards 6s;
+  animation: crawler 78s linear forwards 11s;
 }
 
 header {
@@ -54,7 +54,7 @@ aside {
   color: rgb(75,213,238);
   font-size: 4vw;
   margin: 40vh 20vw;
-  animation: alongtimeago 6s linear 2s;
+  animation: alongtimeago 6s linear;
 }
 
 @keyframes alongtimeago {
@@ -62,4 +62,31 @@ aside {
   5% { opacity: 1; }
   95% { opacity: 1; }
   100% { opacity: 0; }
+}
+
+img {
+  position: absolute;
+  opacity: 0;
+  height: 100vh;
+  width: 100vw;
+  height: 100vh;
+  animation: logo 9s linear 6s;
+}
+
+@keyframes logo {
+  0% {
+    transform: translateZ(0);
+    opacity: 0;
+  }
+  1% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateZ(-500vh);
+    opacity: 0;
+  }
 }
