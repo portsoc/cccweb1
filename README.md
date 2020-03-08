@@ -13,9 +13,6 @@
   * Inside these brackets is the name of the tag.
   * We tag the start of every paragraph with `<p>` – "p" is the name of the tag that means a paragraph.
   * Usually tags enclose a part of the document. The tag `<p>` marks the beginning of a paragraph, and there is a _closing tag_ `</p>` (notice the slash `/`) that marks where the paragraph ends.
-* It is good practice to specify which version of HTML is used at the start of each document.
-  * We use the latest version (also known as HTML5).
-  * This is indicated by a special `<!doctype html>` tag at the beginning of the file.
 
 ## Stage 2: Marking Up Headings ([see the diff](https://github.com/portsoc/cccweb1/commit/stage-2))
 
@@ -46,10 +43,13 @@
 * A title is not part of the page content – it is _metadata_ – information about the document.
 * Every HTML document has two sections: a "head" with such metadata, and the "body" with the actual content displayed on the page.
 * So every HTML document, whether we write it or not, actually has three elements: `<html>`, `<head>` and `<body>` – the latter two are nested inside the `<html>` element.
-* Our document now makes this structure explicit.
-  * `<title>` is inside `<head>`
-  * the rest is inside `<body>`
-  * the nesting is shown with indentation – this helps the human understand the HTML code better
+  * All the elements together form a _hierarchy_ – in computing terms a _tree_.
+* Our document now makes this hierarchical structure explicit.
+  * `<title>` is inside `<head>`.
+  * The rest is inside `<body>`.
+  * The nesting is shown with indentation – this helps the human understand the HTML code better.
+* It is good practice to specify that we use the latest version (also known as HTML5).
+  * This is indicated by a special `<!doctype html>` tag at the beginning of the file.
 
 ## Stage 6: Adding a Basic Style ([see the diff](https://github.com/portsoc/cccweb1/commit/stage-6))
 
@@ -109,6 +109,7 @@
 ## Stage 13: Animate the Crawl ([see the diff](https://github.com/portsoc/cccweb1/commit/stage-13))
 
 * Stylesheets can include animation, so we can move the text.
+  * We'll get the timing right later, for now the animation runs quick whilst we make it work how we want.
 
 ## Stage 14: Add "A long time ago..." ([see the diff](https://github.com/portsoc/cccweb1/commit/stage-14))
 
@@ -117,6 +118,8 @@
 ## Stage 15: The Logo ([see the diff](https://github.com/portsoc/cccweb1/commit/stage-15))
 
 * To complete the intro we add the flying logo.
+  * The logo is drawn using SVG (Scalable Vector Graphics) – one of the many web image formats.
+  * SVG images can scale to any size without pixelation, which is useful for our animation need.
 
 ## Stage 16: Music ([see the diff](https://github.com/portsoc/cccweb1/commit/stage-16))
 
