@@ -16,20 +16,20 @@ A plain-text document comprising a couple of headings and three paragraphs.
   * In HTML when we use tags we often use them in pairs.
 * The top level element is `<html>`: this contains two elements; a `<head>` and a `<body>`.
 * Elements in the `<head>` are informational: they tell the browser useful things about the document.
-  * The head is initially empty.
+  * At this stage, the head is empty.
 * Elements in the `<body>` are the content that should be displayed on the page.
   * The body contains all of the original plain text.
 
 ## Stage 2: Marking-Up A Heading ([see the diff](https://github.com/portsoc/cccweb1/commit/stage-2))
 
-* We have marked-up the heading using the `<h1>` tag.
-  * The first tag marks the start of an element (e.g. `<h1>` is the start of our heading).
+* We have marked up the heading using the `<h1>` tag.
+  * The first tag marks the start of the element (e.g. `<h1>` is the start of our heading).
   * The second tag marks the end of the element.  To distinguish it from a nested start tag, we add a slash before the element name (e.g. `</h1>` ends the heading).
 * There are six different tags for headings, reflecting different levels: `<h1>` through to `<h6>`.
 
 ## Stage 3: Marking-Up Paragraphs ([see the diff](https://github.com/portsoc/cccweb1/commit/stage-3))
 
-* We have marked-up each of the three paragraphs using the `<p>` tag.
+* We have marked up each of the three paragraphs using the `<p>` tag.
 * This creates three paragraph _elements_.
 
 ## Stage 4: Adding Emphasis ([see the diff](https://github.com/portsoc/cccweb1/commit/stage-4))
@@ -117,9 +117,9 @@ A plain-text document comprising a couple of headings and three paragraphs.
 
 * To complete the intro we add the flying logo.
 
-## Stage 17: Theme ([see the diff](https://github.com/portsoc/cccweb1/commit/stage-17))
+## Stage 17: Music ([see the diff](https://github.com/portsoc/cccweb1/commit/stage-17))
 
-* We add the theme so that it begins to play as the logo animation begins.
+* We add the theme music such that it begins to play as the logo animation begins.
 
 ## Stage 99: Extras ([see the diff](https://github.com/portsoc/cccweb1/commit/stage-99))
 
