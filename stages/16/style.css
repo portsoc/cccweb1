@@ -54,7 +54,7 @@ aside {
   color: rgb(75,213,238);
   font-size: 4vw;
   margin: 40vh 20vw;
-  animation: alongtimeago 6s linear 2s;
+  animation: alongtimeago 6s linear;
 }
 
 @keyframes alongtimeago {

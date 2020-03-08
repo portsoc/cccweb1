@@ -16,7 +16,8 @@ article {
   position: fixed;
   bottom: 0;
   transform-origin: center bottom;
-  transform: rotate3d(1, 0, 0, 45deg);
+  transform: rotate3d(1, 0, 0, 45deg) translateY(100%);
+  animation: crawler 7s linear infinite forwards;
 }
 
 header {
@@ -30,4 +31,19 @@ strong {
 
 h1 {
   text-transform: uppercase;
+}
+
+@keyframes crawler {
+  0% {
+    transform: rotateX(45deg) translateY(100%);
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotateX(45deg) translateY(-50%);
+    opacity: 0;
+  }
 }
