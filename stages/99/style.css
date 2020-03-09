@@ -12,6 +12,7 @@ body {
   perspective: 50vh;
   height: 100vh;
   overflow: hidden;
+  filter: blur(1px);
 }
 
 body.playing {
@@ -45,6 +46,11 @@ h1 {
   text-transform: uppercase;
 }
 
+h2 {
+  font-size: 1.2em;
+}
+
+
 @keyframes crawler {
   0% {
     transform: rotateX(45deg) translateY(100%);
@@ -65,7 +71,9 @@ aside {
   opacity: 0;
   color: rgb(75,213,238);
   font-size: 4vw;
-  margin: 40vh 20vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 body.playing aside {

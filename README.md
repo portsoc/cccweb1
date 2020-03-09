@@ -79,7 +79,7 @@
 
 ## Stage 9: Centred Heading(s) ([see the diff](https://github.com/portsoc/cccweb1/commit/stage-9))
 
-* "University of Portsmouth" and "A New Platform" are now centred.  We achieved this by:
+* "CCC Episode IV" and "A New Platform" are now centred.  We achieved this by:
   * Grouping the elements in a parent element: the `<header>` element is just right for a group of headings at the top of the page.
   * Adding a style rule that centres all the content of that element.
   * Note that HTML and CSS use American spellings even though the web's inventor, Sir Tim Berners-Lee, is British, and worked in Switzerland at CERN on European-funded particle physics experiments when he invented it.

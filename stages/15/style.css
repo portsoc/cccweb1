@@ -33,6 +33,11 @@ h1 {
   text-transform: uppercase;
 }
 
+h2 {
+  font-size: 1.2em;
+}
+
+
 @keyframes crawler {
   0% {
     transform: rotateX(45deg) translateY(100%);
