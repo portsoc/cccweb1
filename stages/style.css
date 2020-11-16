@@ -1,5 +1,7 @@
 body {
   background: black;
+  background: url(stars.png);
+  background-size: 100vw;
   color: #ffd23e;
   font-family: arial;
 }
@@ -13,3 +15,17 @@ article {
 header {
   text-align: center;
 }
+
+strong {
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.2em;
+}
+
